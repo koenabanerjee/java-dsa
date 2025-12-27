@@ -8,7 +8,7 @@ public class quickSort {
         int i = low+1;
         int j = high;
         while(i<j){
-            while( i<=high && arr[i]<=pivot){
+            while(i<=high && arr[i]<=pivot){
                 i++;
             }
             while(j>=low && arr[j]>pivot  ){
