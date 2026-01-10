@@ -2,11 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class rotateArrayByDPlaces {
-    //LEFT ROTATE BY D PLACES
-    
-    
-   public static void reverse(int start, int end, int arr[]) {
+public class rightRotation {
+    public static void reverse(int start, int end, int arr[]) {
     if(start >= end) return;
 
     int temp = arr[start];
@@ -21,9 +18,10 @@ public class rotateArrayByDPlaces {
         int n = arr.length;
         d = d%n;
         
+        
+        reverse(0,n-1,arr);
         reverse(0,d-1,arr);
         reverse(d,n-1,arr);
-        reverse(0,n-1,arr);
     }
     
     public static void main(String[] args) {
@@ -47,4 +45,5 @@ public class rotateArrayByDPlaces {
         s.close();
 
     }
+    
 }
