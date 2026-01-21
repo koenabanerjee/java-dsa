@@ -2,18 +2,15 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class removeDuplicates {
-    public static int removeDups(int arr[]){
-        int i = 0;
+public class linearSearch {
+    public static int linSearch(int arr[], int num){
         int n = arr.length;
-        for(int j = 1;j<n;j++){
-            if(arr[j]!=arr[i]){
-                arr[i+1] = arr[j];
-                i++;
+        for(int i = 0;i<n;i++){
+            if(arr[i] == num){
+                return i;
             }
         }
-        return i+1; //returns the length of the array after removing dups
-
+        return -1;
         
     }
 
@@ -28,7 +25,9 @@ public class removeDuplicates {
             arr[i] = s.nextInt(); 
  
         }
-        System.out.println("The size of the array after removing duplicate elements is "+removeDups(arr));
-        s.close();
+        System.out.println("Enter the number which we need to find in the array :");
+    int num = s.nextInt();
+       System.out.println("The index at which the num occurs is " + linSearch(arr, num));
+       s.close();
     }
 }
