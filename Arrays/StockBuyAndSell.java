@@ -3,7 +3,7 @@ package Arrays;
 
 public class StockBuyAndSell {
     //Brute force approach - checks all the future selling prices and sees which gives the best profit
-    public static int StockBuySell(int[] arr){
+    public int StockBuySell(int[] arr){
         int maxProfit = Integer.MIN_VALUE;
         int n = arr.length;
 
@@ -19,7 +19,7 @@ public class StockBuyAndSell {
 
     //Optimal approach - we will do a single traversal and keep track of minimum price and maximum profit
 
-    public static int StockBuyAndSellOptimal(int[] arr){
+    public int StockBuyAndSellOptimal(int[] arr){
         int maxProfit = 0;
         int minPrice = Integer.MAX_VALUE;
         int n = arr.length;

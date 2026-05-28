@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class union {
 
-    public static ArrayList<Integer> findUnion(int[] arr1, int[] arr2) {
+    public ArrayList<Integer> findUnion(int[] arr1, int[] arr2) {
         int n = arr1.length, m = arr2.length;
         ArrayList<Integer> union = new ArrayList<>();
         int i = 0, j = 0;

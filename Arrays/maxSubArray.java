@@ -2,7 +2,7 @@ package Arrays;
 
 public class maxSubArray {
     //optimal approach - kadane's algorithm
-    public static int KadaneAlgo(int[] arr){
+    public int KadaneAlgo(int[] arr){
         long maxi = Long.MIN_VALUE;
         long sum = 0;
         int n = arr.length;

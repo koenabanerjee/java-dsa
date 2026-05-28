@@ -3,7 +3,7 @@ package Arrays;
 public class majorityElement {
 
     //OPTIMAL APPROACH -> MOORE'S VOTING ALGORITHM
-    public static int majorityEle(int[] arr){
+    public int majorityEle(int[] arr){
         int n = arr.length;
         int cnt = 0;
         int el = 0;

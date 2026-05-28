@@ -6,7 +6,7 @@ import java.util.List;
 public class RearrangeArrayBySign {
     //BRUTE FORCE APPROACH - since the number of positive and negative elements are the same, we put positives into an array called “pos” and negatives into an array called “neg”.
 
-    public static int[] rearrangeBySignBrute(int[] arr){
+    public int[] rearrangeBySignBrute(int[] arr){
         List<Integer> pos = new ArrayList<>();
         List<Integer> neg = new ArrayList<>();
         int n = arr.length;
@@ -31,7 +31,7 @@ public class RearrangeArrayBySign {
 
     //OPTIMAL APPROACH - WE WILL DO SINGLE TRAVERSAL AND PLACE THE ELEMENTS ACCORDINGLY
 
-    public static int[] rearrangeBySignOptimal(int[] arr){
+    public int[] rearrangeBySignOptimal(int[] arr){
         int n = arr.length;
         //initialize the result arr
         int[] ans = new int[n];
