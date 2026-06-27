@@ -44,8 +44,8 @@ public class threeSum {
         List<List<Integer>> res = obj.threeSumm(arr, n);
 
         for (List<Integer> triplet : res) {
-            for (int num : triplet) System.out.print(num + " ");
-            System.out.println();
+             System.out.print(triplet);
+            
         }
     
 }
