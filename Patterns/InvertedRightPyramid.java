@@ -1,5 +1,11 @@
 package Patterns;
 
+// * * * * * 
+// * * * * 
+// * * * 
+// * * 
+// * 
+
 public class InvertedRightPyramid {
     public void Pattern(int n){
         for(int i = 1;i<=n;i++){
